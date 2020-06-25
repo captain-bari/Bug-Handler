@@ -5,11 +5,30 @@ import {firebase} from '../firebase'
 const FormPage = () => {
 
   useEffect(() => {
-    //console.log(this.props);
-    //console.log(firebase.auth().currentUser);
-    firebase.auth().signInWithEmailAndPassword("barinde.turkey@gmail.com", "hello123").then((u) => {/*console.log(u); */}).catch((err) => {console.log(err);});
-   // console.log(firebase.auth());
+      firebase.auth().signOut().then(() => {/*console.log('Signed Out');*/}).catch(e=>{console.error('Sign Out Error', e);});
   }, [])
+
+  const authlogin = () => {
+    var email = document.getElementById("loginemail").value;
+    var password = document.getElementById("loginpassword").value;
+    firebase.auth().signInWithEmailAndPassword(email, password).then((u) => {console.log(u);}).catch((err) => {alert(err.message);});
+    
+    
+    }
+
+    const authsignup = () => {
+
+      var email = document.getElementById("loginemail").value;
+      var password = document.getElementById("loginpassword").value;
+      firebase.auth().createUserWithEmailAndPassword(email, password).then((u) => { firebase.auth().signInWithEmailAndPassword(email, password).then((u) => {/*console.log(u);*/}).catch((err) => {alert(err.message);});}).catch((err) => {alert(err.message);});
+
+    }
+    const authforgot = () => {
+
+      var email = document.getElementById("loginemail").value;
+      firebase.auth().sendPasswordResetEmail(email).then((u) => {alert("Email sent")}).catch((err) => {alert(err.message);});
+
+    }
 
 
   return (<center>
@@ -23,30 +42,22 @@ const FormPage = () => {
                   Log in
                 </h3>
               </MDBRow>
-              <MDBRow className="mt-2 mb-3 d-flex justify-content-center">
-                <a href="#!" className="fa-lg p-2 m-2 fb-ic">
-                  <MDBIcon fab icon="facebook-f" size="lg" className="white-text" />
-                </a>
-                <a href="#!" className="fa-lg p-2 m-2 tw-ic">
-                  <MDBIcon fab className="fa-twitter white-text fa-lg" />
-                </a>
-                <a href="#!" className="fa-lg p-2 m-2 gplus-ic">
-                  <MDBIcon fab className="fa-google-plus-g white-text fa-lg" />
-                </a>
-              </MDBRow>
+              
             </div>
             <MDBCardBody className="mx-4 mt-4">
-              <MDBInput label="Your email" group type="text" validate />
+              <MDBInput label="Your email" group type="text" validate id="loginemail" />
               <MDBInput
                 label="Your password"
                 group
                 type="password"
                 validate
+                id="loginpassword"
                 containerClass="mb-0"
               />
               <p className="font-small grey-text d-flex justify-content-end">
                 Forgot
                 <a
+                  onClick={authforgot}
                   href="#!"
                   className="dark-grey-text ml-1 font-weight-bold"
                 >
@@ -57,6 +68,7 @@ const FormPage = () => {
                 <MDBCol md="5" className="d-flex align-items-start">
                   <div className="text-center">
                     <MDBBtn
+                      onClick={authlogin}
                       color="grey"
                       rounded
                       type="button"
@@ -70,6 +82,7 @@ const FormPage = () => {
                   <p className="font-small grey-text mt-3">
                     Don't have an account?
                     <a
+                      onClick={authsignup}
                       href="#!"
                       className="dark-grey-text ml-1 font-weight-bold"
                     >
