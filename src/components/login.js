@@ -1,7 +1,17 @@
-import React from "react";
+import React, {components, useEffect,useState} from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon } from 'mdbreact';
+import {firebase} from '../firebase'
 
 const FormPage = () => {
+
+  useEffect(() => {
+    //console.log(this.props);
+    //console.log(firebase.auth().currentUser);
+    firebase.auth().signInWithEmailAndPassword("barinde.turkey@gmail.com", "hello123").then((u) => {/*console.log(u); */}).catch((err) => {console.log(err);});
+   // console.log(firebase.auth());
+  }, [])
+
+
   return (<center>
     <MDBContainer>
       <MDBRow>
