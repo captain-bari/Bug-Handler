@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/Bug-tracker/static/css/main.033d93fb.chunk.css",
-    "main.js": "/Bug-tracker/static/js/main.50d358a3.chunk.js",
-    "main.js.map": "/Bug-tracker/static/js/main.50d358a3.chunk.js.map",
+    "main.js": "/Bug-tracker/static/js/main.9ec232db.chunk.js",
+    "main.js.map": "/Bug-tracker/static/js/main.9ec232db.chunk.js.map",
     "runtime-main.js": "/Bug-tracker/static/js/runtime-main.5e46ab1a.js",
     "runtime-main.js.map": "/Bug-tracker/static/js/runtime-main.5e46ab1a.js.map",
     "static/css/2.aeca6a3d.chunk.css": "/Bug-tracker/static/css/2.aeca6a3d.chunk.css",
-    "static/js/2.c9b9599b.chunk.js": "/Bug-tracker/static/js/2.c9b9599b.chunk.js",
-    "static/js/2.c9b9599b.chunk.js.map": "/Bug-tracker/static/js/2.c9b9599b.chunk.js.map",
+    "static/js/2.4b8bb8e1.chunk.js": "/Bug-tracker/static/js/2.4b8bb8e1.chunk.js",
+    "static/js/2.4b8bb8e1.chunk.js.map": "/Bug-tracker/static/js/2.4b8bb8e1.chunk.js.map",
     "index.html": "/Bug-tracker/index.html",
-    "precache-manifest.39bf95daec1b5d7a79686ed2ef7a5405.js": "/Bug-tracker/precache-manifest.39bf95daec1b5d7a79686ed2ef7a5405.js",
+    "precache-manifest.736eaca663140ffa2368832b8bb66162.js": "/Bug-tracker/precache-manifest.736eaca663140ffa2368832b8bb66162.js",
     "service-worker.js": "/Bug-tracker/service-worker.js",
     "static/css/2.aeca6a3d.chunk.css.map": "/Bug-tracker/static/css/2.aeca6a3d.chunk.css.map",
     "static/css/main.033d93fb.chunk.css.map": "/Bug-tracker/static/css/main.033d93fb.chunk.css.map",
-    "static/js/2.c9b9599b.chunk.js.LICENSE.txt": "/Bug-tracker/static/js/2.c9b9599b.chunk.js.LICENSE.txt",
+    "static/js/2.4b8bb8e1.chunk.js.LICENSE.txt": "/Bug-tracker/static/js/2.4b8bb8e1.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/Bug-tracker/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/Bug-tracker/static/media/fa-solid-900.f3a7d3b5.woff",
     "static/media/logo.svg": "/Bug-tracker/static/media/logo.5d5d9eef.svg",
-    "static/media/mdb-react.png": "/Bug-tracker/static/media/mdb-react.d3e3273c.png"
+    "static/media/mdb-react.png": "/Bug-tracker/static/media/mdb-react.6e0f56ab.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5e46ab1a.js",
     "static/css/2.aeca6a3d.chunk.css",
-    "static/js/2.c9b9599b.chunk.js",
+    "static/js/2.4b8bb8e1.chunk.js",
     "static/css/main.033d93fb.chunk.css",
-    "static/js/main.50d358a3.chunk.js"
+    "static/js/main.9ec232db.chunk.js"
   ]
 }
