@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
+import Slidenav from './slidenav';
 
 class NavbarPage extends Component {
 state = {
@@ -46,16 +47,7 @@ render() {
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="twitter" />
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="google-plus-g" />
-              </MDBNavLink>
-            </MDBNavItem>
+            
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
@@ -69,10 +61,22 @@ render() {
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+                <MDBIcon fab icon="twitter" />
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+                <MDBIcon fab icon="google-plus-g" />
+              </MDBNavLink>
+            </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
+      <Slidenav/>
     </Router>
+    
     );
   }
 }

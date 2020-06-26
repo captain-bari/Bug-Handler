@@ -5,7 +5,7 @@ import {firebase} from '../firebase'
 const FormPage = () => {
 
   useEffect(() => {
-      firebase.auth().signOut().then(() => {/*console.log('Signed Out');*/}).catch(e=>{console.error('Sign Out Error', e);});
+      //firebase.auth().signOut().then(() => {/*console.log('Signed Out');*/}).catch(e=>{console.error('Sign Out Error', e);});
   }, [])
 
   const authlogin = () => {
