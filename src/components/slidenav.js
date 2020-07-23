@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../assets/mdb-react.png";
-import { MDBListGroup, MDBListGroupItem, MDBIcon } from 'mdbreact';
+import { MDBListGroup, MDBListGroupItem, MDBIcon,MDBAnimation} from 'mdbreact';
 import { NavLink } from 'react-router-dom';
 import Routes from './route';
 
@@ -8,7 +8,8 @@ const TopNavigation = () => {
     return (<div>
         <div className="sidebar-fixed position-fixed">
             <a href="#!" className="logo-wrapper waves-effect">
-                <img alt="MDB React Logo" className="img-fluid"  src={logo}/>
+            <MDBAnimation type="bounce" infinite>
+                <img alt="MDB React Logo" className="img-fluid"  src={logo}/></MDBAnimation>
             </a>
             <MDBListGroup className="list-group-flush">
                

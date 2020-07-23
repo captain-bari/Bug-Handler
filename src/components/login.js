@@ -32,7 +32,7 @@ const FormPage = () => {
 
 
   return (<center>
-    <MDBContainer>
+    <MDBContainer className="mx-auto">
       <MDBRow>
         <MDBCol md="6">
           <MDBCard>
